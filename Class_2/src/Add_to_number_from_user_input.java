@@ -13,5 +13,4 @@ public class Add_to_number_from_user_input {
 		z=x+y;
 		System.out.println("Addition of " +x +" and " +y +" is:"+z);
 	}
-
 }
