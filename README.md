@@ -82,7 +82,6 @@ public class Hello_world {
 #### 🎯 Topics Covered
 - Adding Two Numbers (Static and User Input)
 ```java
-
 public class Add_to_number {
 	//Add two number, the two numbers are statically allocate not dynamically we will learn farther how to take user input
 	public static void main(String[] args) {
@@ -183,48 +182,28 @@ import java.util.Scanner;
 
 public class Else_if_condition {
 
-	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		
-		System.out.print("Enter 3 number:");
-		int x=sc.nextInt();
-		int y=sc.nextInt();
-		int z=sc.nextInt();
-		int max;
-		if(x==y&&y==z)
-		{
-			System.out.println("All Numbers are equal");
-		}
-		else
-		{
-			if(x>y)
-			{
-				if(x>z)
-				{
-					max=x;
-				}
-				else
-				{
-					max=z;
-				}
-			}
-			else
-			{
-				if(y>z)
-				{
-					max=y;
-				}
-				else
-				{
-					max=z;
-				}
-			}
-			System.out.println("Maximum is: "+max);
-		}
-		
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter 3 numbers: ");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+        int max;
 
-	}
-
+        if (x == y && y == z) {
+            System.out.println("All Numbers are equal");
+            return; // Exit the program if all numbers are equal
+        }
+        if (x > y && x > z) {
+            max = x;
+        } else if (y > x && y > z) {
+            max = y;
+        } else {
+            max = z;
+        }
+        System.out.println("Maximum number is: " + max);
+    }
 }
 ```
 - Loops in Java
@@ -321,8 +300,113 @@ public class Ternary_operator {
 	}	
 }
 ```
+<br>
 <h1 align="center">🏆 CLASS 3</h1>
 
 #### 🎯 Topics Covered
 - 1D Array.
 - 2D Array.
+- Enhance for loop
+- Jagged Array.
+
+### 1. One-Dimensional (1D) Arrays
+A 1D array is a simple list of elements stored sequentially in memory.
+Example:
+```c
+//this is possiable in c programing
+int arr[3]={1,2,3}//this is not possible is java
+```
+```java
+//this is possible in java
+int[] arr1 = {10, 20, 30, 40, 50};
+//or
+int arr2[]={1,2,3,4,5};
+```
+- Access elements using an index, e.g., `arr1[2]` returns `30`.
+- In java array index always start with `0` like- `arr[0]=10`,
+`arr[1]=20`,
+`arr[2]=30`,
+`arr[3]=40`,
+- there is a poroperty array.length which return the array size, Here `arr1.length` will be return 5
+- how to print the array element
+```java
+for(int i=0;i<arr1.length;i++)//Instade of arr1.length we can write 5 also
+{
+	System.out.print(arr2[i]+" ");
+}
+//Output:10,20,30,40,50
+```
+### Dynamic 1D Array
+```java
+int a[],i;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter the number of element:");
+int	n=sc.nextInt();
+a=new int[n];//dynamic 1d array declaration
+for(i=0;i<a.length;i++)
+{
+	a[i]=sc.nextInt();
+}
+```
+### 2.Two-Dimensional (2D) Arrays
+```java
+int a[3][2];//this is not possible in java
+int a[][]; // this is possible
+//or
+int a[][]=new int [3][2]//a[3][2];
+//printing process is same as c programing
+
+for(i=0;i<a.length;i++)
+{
+	for(j=0;j<a[i].length;j++)
+	{
+		System.out.print(a[i][j]+" ");
+	}
+	System.out.println();
+}
+```
+### 3.Enhance for loop
+Enhance for loop only use to print the array 
+- Enhance for loop for 1d array print
+```java
+for(int x:a)
+{
+	System.out.println(x);
+}
+```
+- Enhance for loop for 2d array print
+```java
+for(int x[]:a)
+{
+	for(int y:x)
+	{
+		System.out.print(y+" ");
+	}
+	System.out.println();
+}
+```
+### 4. Jagged array
+In jagged array row is fixed but the column as per the user input.In ecah row there will be an 1d array.
+![jagged array](Assets/Jagged-Array.jpg)
+```java
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter the row:");
+int r=sc.nextInt();
+int a[][]=new int [r][];
+int i,j;
+for(i=0;i<a.length;i++)
+{
+	System.out.print("Enter the number of column for row "+i+" :");
+	int c=sc.nextInt();
+	a[i]=new int [c];
+}
+System.out.println("Enter the element");
+for(i=0;i<a.length;i++)
+{
+	for(j=0;j<a[i].length;j++)
+	{
+		a[i][j]=sc.nextInt();
+	}
+}
+```
+
