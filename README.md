@@ -409,4 +409,195 @@ for(i=0;i<a.length;i++)
 	}
 }
 ```
+<br>
+<h1 align="center">🏆 CLASS 4</h1>
 
+#### 🎯 Topics Covered
+- Character Array
+- String
+
+## Character Array
+```java
+char s[]={'h','e','l','l','o'};
+//s[0]=h,s[1]=e,s[2]=l,s[3]=l,s[4]=o
+for(int i=0;i<s.length;i++)
+{
+	System.out.print(s[i]);//output:->hello
+}
+```
+Seems like it is string but this is not String in `java` this is called character array.
+- ### How to user input character
+```java
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter the length of the string:");
+int n=sc.nextInt();
+char s[]=new char [n];
+System.out.println("Enter the string:");
+for(int i=0;i<s.length;i++)
+{
+	System.out.print("S["+i+"]=");
+	s[i]=sc.next().charAt(0);//if we give input 'world' it will only take first character ie 'w'.
+}
+
+System.out.print("String is:");
+for(char x:s)
+{
+	System.out.print(x);
+}
+```
+## String
+```java
+String name="Surojit Saha";
+//Now we can say this is a string
+```
+#### How to take user input
+```java
+Scanner sc=new Scanner(System.in);
+				
+//This is how we take a user input string
+String str1;
+System.out.print("Enter the string:");
+str1=sc.nextLine();//if we give multi world input it will take multi world input
+// like- 'hello world' input output will be 'hello world'
+System.out.println("String is:"+str1);
+```
+```java
+str1=sc.nextLine();//It will take only one word like if we give input like 'hello world' it will only take 'hello'.
+```
+
+- #### How to convert String to a Character array
+```java
+char s1[]=str1.toCharArray();//where 'str1' is a string and 's1' is a character.
+```
+- #### How to convert Character array to String .
+```java
+char t[]= {'h','e','l','l','o'};
+String str1=new String(t);
+System.out.print("String is: "+str1);//output:->hello
+```
+- ## How to create a string
+
+1. String class
+	- String letaral
+	- using `new` keywoard
+
+2. StringBuilder class
+
+3. StringBuffer class.
+<br>
+<br>
+<h1 align="center">Using string letaral</h1>
+
+```java
+String s1="hello";
+String s2="wolrd";
+String s3="Hi";
+String s4="hello";
+String s5="Hello";
+String s6="Kolkaa";
+```
+![String pool](String_pool.jpg)
+<br>
+<h1 align="center">Using new keywoard</h1>
+
+```java
+String str1=new String("hello");
+String str2=new String("World");
+String str3=new String("hello");
+```
+Here we think 2 object will be created because str1 and str3 is same value but not same object here 3 object will be created.
+
+![String pool2](<WhatsApp Image 2025-06-09 at 00.37.54_0c7c6bea.jpg>)
+
+```java
+if(s1==s4)
+{
+	System.out.println("Same");
+}
+else
+{
+	System.out.println("Different");
+}
+//Output:->same
+
+if(s1==str1)
+{
+	System.out.println("Same");
+}
+else
+{
+	System.out.println("Different");
+}
+//Output:->Different
+```
+`==` we checking if the two object are same or not.It did not check the value it check object that's why even s1 and str1 has same value but being different object it showing output `different`.
+```java
+if(s1.equal(s4))
+{
+	System.out.println("Same");
+}
+else
+{
+	System.out.println("Different");
+}
+//Output:->same
+
+if(s1.equal(str3))
+{
+	System.out.println("Same");
+}
+else
+{
+	System.out.println("Different");
+}
+//Output:->Same
+```
+`.equal()` we checking if the two value are same or not.It did not check the object ,it check value that's why even s1 and str3 has different object being same value it give output `same`
+
+<br>
+<h1 align="center">🏆 CLASS 5</h1>
+
+#### 🎯 Topics Covered
+- Function of Strings
+
+| Method                | Description                                                            | Return Type  |
+|----------------------|------------------------------------------------------------------------|-------------|
+| charAt()             | Returns the character at the specified index (position)               | char        |
+| codePointAt()        | Returns the Unicode of the character at the specified index           | int         |
+| codePointBefore()    | Returns the Unicode of the character before the specified index       | int         |
+| codePointCount()     | Returns the number of Unicode values found in a string                | int         |
+| compareTo()          | Compares two strings lexicographically                                | int         |
+| compareToIgnoreCase()| Compares two strings lexicographically, ignoring case differences     | int         |
+| concat()            | Appends a string to the end of another string                          | String      |
+| contains()          | Checks whether a string contains a sequence of characters             | boolean     |
+| contentEquals()     | Checks whether a string contains the exact same sequence of characters of the specified CharSequence or StringBuffer | boolean |
+| copyValueOf()       | Returns a String that represents the characters of the character array | String      |
+| endsWith()          | Checks whether a string ends with the specified character(s)          | boolean     |
+| equals()           | Compares two strings. Returns true if the strings are equal, false otherwise | boolean |
+| equalsIgnoreCase()  | Compares two strings, ignoring case considerations                    | boolean     |
+| format()           | Returns a formatted string using the specified locale, format string, and arguments | String |
+| getBytes()         | Converts a string into an array of bytes                               | byte[]      |
+| getChars()         | Copies characters from a string to an array of chars                   | void        |
+| hashCode()         | Returns the hash code of a string                                     | int         |
+| indexOf()         | Returns the position of the first found occurrence of specified characters in a string | int |
+| intern()         | Returns the canonical representation for the string object              | String      |
+| isEmpty()        | Checks whether a string is empty or not                                | boolean     |
+| join()          | Joins one or more strings with a specified separator                    | String      |
+| lastIndexOf()   | Returns the position of the last found occurrence of specified characters in a string | int |
+| length()        | Returns the length of a specified string                               | int         |
+| matches()       | Searches a string for a match against a regular expression, and returns the matches | boolean |
+| offsetByCodePoints() | Returns the index within this String that is offset from the given index by codePointOffset code points | int |
+| regionMatches() | Tests if two string regions are equal                                | boolean     |
+| replace()      | Searches a string for a specified value, and returns a new string where the specified values are replaced | String |
+| replaceAll()   | Replaces each substring of this string that matches the given regular expression with the given replacement | String |
+| replaceFirst() | Replaces the first occurrence of a substring that matches the given regular expression with the given replacement | String |
+| split()       | Splits a string into an array of substrings                           | String[]    |
+| startsWith()  | Checks whether a string starts with specified characters            | boolean     |
+| subSequence() | Returns a new character sequence that is a subsequence of this sequence | CharSequence |
+| substring()   | Returns a new string which is the substring of a specified string  | String      |
+| toCharArray() | Converts this string to a new character array                      | char[]      |
+| toLowerCase() | Converts a string to lower case letters                           | String      |
+| toString()    | Returns the value of a String object                              | String      |
+| toUpperCase() | Converts a string to upper case letters                           | String      |
+| trim()       | Removes whitespace from both ends of a string                     | String      |
+| valueOf()    | Returns the string representation of the specified value         | String      |
