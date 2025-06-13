@@ -12,7 +12,7 @@ public class String_concatination {
 		//String lname="Saha";
 		String lname=sc.nextLine();
 		System.out.print("Your Full Name Is:"+fname +" "+lname);
-
+		sc.close();
 
 
 }

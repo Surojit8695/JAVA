@@ -9,6 +9,7 @@ public class Class_object_basic {
         x = sc.nextInt();
         System.out.print("Enter value for y: ");
         y = sc.nextInt();
+        sc.close();
     }
 
     void display() {

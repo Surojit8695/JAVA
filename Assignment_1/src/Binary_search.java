@@ -48,7 +48,7 @@ public class Binary_search {
 		{
 			System.out.println("Not founded");
 		}
-		
+		sc.close();
 
 	}
 

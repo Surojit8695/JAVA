@@ -20,7 +20,7 @@ public class String_to_character_array_conversation {
 		{
 			System.out.print(x);
 		}
-
+sc.close();
 	}
 
 }

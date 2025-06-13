@@ -15,7 +15,7 @@ public class String_declaration {
 		
 		System.out.println(s[2]);//this is possible (output will be 'l')
 //		System.out.println(name[0]);//but this is not possible
-		
+		sc.close();
 	}
 
 }

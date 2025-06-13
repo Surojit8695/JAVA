@@ -32,6 +32,7 @@ class Complex{
 		real=sc.nextInt();
 		System.out.print("Enter the imaginary part for "+msg+":");
 		imaginary=sc.nextInt();
+		sc.close();
 	}
 	void Display(String msg)
 	{

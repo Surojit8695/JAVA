@@ -14,6 +14,7 @@ public class Complex_operation_using_switch_case {
 			System.out.println("1.ADDITION\n2.SUBTRACTION\n3.MULTIPLICATION\n4.EXIT\n");
 			System.out.println("Enter your choice:");
 			int choice=sc.nextInt();
+			sc.close();
 			switch(choice)
 			{
 			case 1:c1.input("Complex number 1");
@@ -60,6 +61,7 @@ class Complex1{
 		real=sc.nextInt();
 		System.out.print("Enter the imaginary part for "+msg+":");
 		imaginary=sc.nextInt();
+		sc.close();
 	}
 	void Display(String msg)
 	{

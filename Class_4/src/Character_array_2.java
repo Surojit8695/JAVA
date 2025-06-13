@@ -21,7 +21,7 @@ public class Character_array_2 {//this is not consider as string this is charact
 		{
 			System.out.print(x);
 		}
-
+sc.close();
 	}
 
 }

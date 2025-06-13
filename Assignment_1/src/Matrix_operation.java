@@ -20,6 +20,7 @@ public class Matrix_operation {
                 case 4: System.exit(0);
                 default: System.out.println("Wrong choice...");
             }
+			sc.close();
         }
     }
 

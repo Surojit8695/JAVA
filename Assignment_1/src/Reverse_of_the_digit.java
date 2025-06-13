@@ -7,7 +7,7 @@ public class Reverse_of_the_digit {
 
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
-		int i,sum=0;
+		int sum=0;
 		System.out.println("Enter the Digit:");
 		int num=sc.nextInt();
 		int temp=num;

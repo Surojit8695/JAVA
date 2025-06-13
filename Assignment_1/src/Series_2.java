@@ -12,7 +12,8 @@ public class Series_2 {
 
         System.out.print("Enter the number of terms n: ");
         int n = sc.nextInt();
-        
+        sc.close();
+
         int i,sum=0;
         int term=1;
         for(i=1;i<=n;i++)
@@ -21,7 +22,6 @@ public class Series_2 {
              term *= x; 
         }
         System.out.println("Sum of the series: " + sum);
-        sc.close();
 	}
 
 }

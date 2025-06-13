@@ -12,7 +12,7 @@ public class String_input_multi_line {
 				str1=sc.nextLine();//if we give multi world input it will take multi world input
 				// like- 'hello world' input output will be 'hello world'
 				System.out.println("String is:"+str1);
-
+				sc.close();
 	}
 
 }
