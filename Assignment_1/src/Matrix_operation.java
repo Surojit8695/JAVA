@@ -1,9 +1,12 @@
+//22.Write a program to perform 
+//addition, subtraction, and multiplication of two matrices using a menu-driven program.
 import java.util.Scanner;
 
 public class Matrix_operation {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Matrix m1= new Matrix();
         while (true) {
             System.out.println("\n\n----MENU----");
             System.out.println("1. ADDITION\n2. SUBTRACTION\n3. MULTIPLICATION\n4. EXIT");
@@ -11,17 +14,25 @@ public class Matrix_operation {
             int choice = sc.nextInt();
             
             switch (choice) {
-                case 1: MatrixAddition(sc); break;
-                case 2: MatrixSubtraction(sc); break;
-                case 3: MatrixMultiplication(sc); break;
+                case 1: m1.MatrixAddition(); break;
+                case 2: m1.MatrixSubtraction(); break;
+                case 3: m1.MatrixMultiplication(); break;
                 case 4: System.exit(0);
                 default: System.out.println("Wrong choice...");
             }
         }
     }
 
-    // Method for matrix addition
-    private static void MatrixAddition(Scanner sc) {
+    
+}
+
+
+
+
+class Matrix{
+	// Method for matrix addition
+     void MatrixAddition() {
+    	Scanner sc = new Scanner(System.in);
         System.out.print("Enter rows and columns for matrix 1:");
         int r1 = sc.nextInt(), c1 = sc.nextInt();
         System.out.print("Enter rows and columns for matrix 2:");
@@ -60,10 +71,12 @@ public class Matrix_operation {
 	            System.out.println();
 	        }
         }
+        sc.close();
     }
 
     // Method for matrix subtraction
-    private static void MatrixSubtraction(Scanner sc) {
+    void MatrixSubtraction() {
+    	Scanner sc = new Scanner(System.in);
         System.out.print("Enter rows and columns for matrix 1:");
         int r1 = sc.nextInt(), c1 = sc.nextInt();
         System.out.print("Enter rows and columns for matrix 2:");
@@ -104,10 +117,12 @@ public class Matrix_operation {
 	            System.out.println();
 	        }
         }
+        sc.close();
     }
 
     // Method for matrix multiplication
-    private static void MatrixMultiplication(Scanner sc) {
+    void MatrixMultiplication() {
+    	Scanner sc = new Scanner(System.in);
         System.out.print("Enter rows and columns for first matrix: ");
         int r1 = sc.nextInt(), c1 = sc.nextInt();
         System.out.print("Enter rows and columns for second matrix: ");
@@ -149,6 +164,7 @@ public class Matrix_operation {
 	            System.out.println();
 	        }
 	    }
+        sc.close();
 
     } 
 }

@@ -18,5 +18,6 @@ public class Reverse_of_the_digit {
 			temp=temp/10;
 		}
 		System.out.println("The reverse of the Digit"+num+"is :"+sum);
+		sc.close();
 	}
 }

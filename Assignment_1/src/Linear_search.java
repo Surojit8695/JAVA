@@ -1,5 +1,4 @@
-//Linear search
-
+//17. Write a program to implement Linear Search, taking values via command-line arguments.
 import java.util.Scanner;
 
 public class Linear_search {

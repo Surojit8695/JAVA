@@ -1,9 +1,8 @@
-//5. Write a program to determine sum of the following series for given value of n:(1 + 1/2 + 1/3 + +1/n).
-//Print the result up to two decimal places. 
-
+/*5.Write a program to determine the sum of the following series for a given value of 
+  n: (1 + 1/2 + 1/3 + ... + 1/n). Print the result up to two decimal places.*/
 import java.util.Scanner;
 
-public class Series_1 {
+public class HarmonicSeriesSum  {
 
 	public static void main(String[] args) {
 		System.out.print("Enter the number of term(n):");

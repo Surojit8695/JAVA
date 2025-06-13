@@ -22,7 +22,6 @@ public class Series_2 {
         }
         System.out.println("Sum of the series: " + sum);
         sc.close();
-
 	}
 
 }

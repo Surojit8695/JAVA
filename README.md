@@ -601,3 +601,29 @@ else
 | toUpperCase() | Converts a string to upper case letters                           | String      |
 | trim()       | Removes whitespace from both ends of a string                     | String      |
 | valueOf()    | Returns the string representation of the specified value         | String      |
+
+`charAt()`
+
+The `charAt()` method returns the character at the specified index in a string.
+The index of the first character is 0, the second character is 1, and so on.
+```java
+String myStr = "Hello";
+char result = myStr.charAt(0);
+System.out.println(result);//Output: H
+```
+`compareTo()`
+
+The `compareTo()` method compares two strings lexicographically.
+
+The comparison is based on the Unicode value of each character in the strings.
+
+The method returns 0 if the string is equal to the other string. A value less than 0 is returned if the string is less than the other string (less characters) and a value greater than 0 if the string is greater than the other string (more characters).
+
+Tip: Use <u>compareToIgnoreCase()</u> to compare two strings lexicographyically, ignoring lower case and upper case differences.
+
+Tip: Use the <u>equals()</u> method to compare two strings without consideration of Unicode values.
+```java
+String myStr1 = "Hello";
+String myStr2 = "Hello";
+System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
+```

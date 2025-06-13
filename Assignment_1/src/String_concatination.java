@@ -1,4 +1,5 @@
-//WAP to take your first and last name as command line argument and print by converting into a single string. 
+// 6.WAP to take your first and last name as command line argument and print
+//by converting into a single string. 
 import java.util.Scanner;
 public class String_concatination {
 

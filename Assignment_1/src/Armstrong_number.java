@@ -1,3 +1,4 @@
+//14.Write a program to print all Armstrong numbers within a given range.
 import java.util.Scanner;
 
 public class Armstrong_number {
@@ -31,7 +32,7 @@ public class Armstrong_number {
 			System.out.println(number+" Is Not Armstrong number");
 		}
 		
-
+		sc.close();
 	}
 
 }

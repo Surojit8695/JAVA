@@ -1,5 +1,4 @@
-//8. Write a program to find the factorial of a given 
-//integer number using recursion (take input using command-line argument). 
+//8. Write a program to find the factorial of a given integer number  
 
 import java.util.Scanner;
 
@@ -15,6 +14,7 @@ public class Factorial_of_a_number {
 			fact=fact*i;
 		}
 		System.out.println("The factorial of "+n+" is:"+fact);
+		sc.close();
 	}
 
 }

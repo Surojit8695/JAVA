@@ -1,3 +1,4 @@
+//18.Write a program to implement Binary Search.
 import java.util.Scanner;
 
 public class Binary_search {

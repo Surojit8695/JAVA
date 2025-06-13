@@ -1,5 +1,5 @@
-//Write a program to read the price of an item in the decimal from 
-//(like 75.95) and print the output in paise(like 7595).
+//2.Write a program to read the price of an item in the decimal form 
+//(like 75.95) and print the output in paise (like 7595 paise).
 import java.util.Scanner;
 
 public class Decimal_to_paise_conversation {
