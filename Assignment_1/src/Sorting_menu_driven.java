@@ -95,8 +95,7 @@ class Sorting_technique{
         }
         printArray(arr, "Insertion Sort");
     }
-
-    // Method to print the sorted array
+//print the array
     void printArray(int[] arr, String sortType) {
         System.out.println("\nSorted array using " + sortType + ":");
         

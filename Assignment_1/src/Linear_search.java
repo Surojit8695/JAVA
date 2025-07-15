@@ -16,7 +16,7 @@ public class Linear_search {
 		}
 		System.out.println("Enter the key value:");
 		int key=sc.nextInt();
-		
+		sc.close();
 		int flag=0;
 		for( i=0;i<n;i++)
 		{

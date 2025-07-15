@@ -21,6 +21,7 @@ public class Binary_search {
 		}
 		System.out.println("Enter the key value:");
 		int key=sc.nextInt();
+		sc.close();
 		int low=0,mid=0,up=n-1;
 		int flag=0;
 		while(low<=up)

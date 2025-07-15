@@ -17,6 +17,7 @@ public class If_else_condition {
 			System.out.println("You can't Vote");
 		}
 
+		sc.close();
 	}
 
 }

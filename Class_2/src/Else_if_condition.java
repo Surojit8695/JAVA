@@ -41,6 +41,7 @@ public class Else_if_condition {
 			}
 			System.out.println("Maximum is: "+max);
 		}
+		sc.close();
 		
 
 	}

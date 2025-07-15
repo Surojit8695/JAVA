@@ -14,7 +14,6 @@ public class Factorial_using_recursion {
 		sc.close();
 
 	}
-	
 }
 
 class Factorialclass{

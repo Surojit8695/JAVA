@@ -18,6 +18,7 @@ public class Dynamic_1d_array {
 		{
 			System.out.println("A["+i+"]="+a[i]);
 		}
+		
 
 	}
 

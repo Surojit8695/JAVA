@@ -9,12 +9,13 @@ public class Factorial_of_a_number {
 		Scanner sc= new Scanner(System.in);
 		int i,fact=1;
 		int n=sc.nextInt();
+		sc.close();
 		for(i=1;i<=n;i++)
 		{
 			fact=fact*i;
 		}
 		System.out.println("The factorial of "+n+" is:"+fact);
-		sc.close();
+	
 	}
 
 }

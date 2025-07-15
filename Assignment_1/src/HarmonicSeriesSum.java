@@ -8,6 +8,7 @@ public class HarmonicSeriesSum  {
 		System.out.print("Enter the number of term(n):");
 		Scanner sc= new Scanner(System.in);
 		int n=sc.nextInt();
+		sc.close();
 		double sum=0.0;
 		int i;
 		for(i=1;i<=n;i++)
@@ -15,7 +16,6 @@ public class HarmonicSeriesSum  {
 			sum=sum+(1.0 / i);
 		}
 		System.out.printf("The sum of the series is: %.2f",sum);
-		sc.close();
 
 	}
 

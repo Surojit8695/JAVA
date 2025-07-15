@@ -47,6 +47,7 @@ public class Datatypes {
 		System.out.println("F="+f);
 		System.out.println("G="+g);
 		System.out.println("H="+h);
+		sc.close();
 	}
 
 }

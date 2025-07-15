@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Gcd_lcm {
     public static void main(String[] args) {
-    	GCD_LCM g1=new GCD_LCM();
+    	GCD_LCMa g1=new GCD_LCMa();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter two numbers: ");
         int num1 = scanner.nextInt();
@@ -14,7 +14,7 @@ public class Gcd_lcm {
         System.out.println("LCM: " + g1.lcm(num1, num2));
     }
 }
-class GCD_LCM{
+class GCD_LCMa{
 	
 	int gcd(int num1, int num2) {
         while (num2 != 0) {

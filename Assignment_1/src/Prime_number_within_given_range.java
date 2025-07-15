@@ -16,7 +16,8 @@ public class Prime_number_within_given_range {
 			{
 				if(i%j==0)
 				{
-					flag++;				}
+					flag++;				
+				}
 			}
 			if(flag==2)
 			{
